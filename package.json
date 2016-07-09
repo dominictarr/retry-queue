@@ -9,10 +9,11 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "standard": "^7.1.2",
     "tape": "^4.6.0"
   },
   "scripts": {
-    "test": "set -e; for t in test/*.js; do node $t; done"
+    "test": "standard && set -e; for t in test/*.js; do node $t; done"
   },
   "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (dominictarr.com)",
   "license": "MIT"
